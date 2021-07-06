@@ -1,15 +1,32 @@
-<footer class="pb-4 text-light" id="footer">
+<footer class="py-5 text-light" id="footer">
   <div class="container">
-      <ul>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Medium</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Linkedin</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Github</a>
-          </li>
-        </ul>
+    <div>
+      <h6 class="link-external-white">Website coded by Louise on Ruby on Rails</h6>
+    </div>
+      <div>
+        <%= link_to "#" do %>
+          <span>
+            <h6 class="link-external-white">Github
+            <%= image_tag("arrow-up-right-white.svg", alt: "Link arrow", class: "up-arrow") %>
+            </h6>
+          </span>
+        <% end %>
+              
+        <%= link_to "#" do %>
+          <span>
+            <h6 class="link-external-white">Medium
+            <%= image_tag("arrow-up-right-white.svg", alt: "Link arrow", class: "up-arrow") %>
+            </h6>
+          </span>
+        <% end %>
+        
+        <%= link_to "#" do %>
+          <span>
+            <h6 class="link-external-white">Linkedin
+            <%= image_tag("arrow-up-right-white.svg", alt: "Link arrow", class: "up-arrow") %>
+            </h6>
+          </span>
+        <% end %>
+      </div>
   </div>
 </footer>
