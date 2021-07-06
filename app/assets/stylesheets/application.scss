@@ -18,6 +18,7 @@ h6 {
   font-family: $monospace-font;
   text-transform: uppercase;
   color: $dark-gray;
+  font-weight: 300;
 }
 
 // Links
@@ -29,11 +30,20 @@ a {
 }
 
 .link-external {
-  color: $darkest-gray;
+  color: $dark-gray;
+}
+
+.link-external-white {
+  color: $light-gray;
 }
 
 .back-arrow {
   width: 1rem;
+}
+
+.up-arrow {
+  width: 1rem;
+  padding-bottom: 0.1rem;
 }
 
 .desc-link {
@@ -49,11 +59,11 @@ a {
 
 // Opener
 .tags {
-  color: $dark-gray;
+  color: $gray;
 }
 
 .brand {
-  color: $gray;
+  color: $lightest-gray;
 }
 
 // Case study
