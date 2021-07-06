@@ -11,3 +11,40 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+a {
+  font-family: $monospace-font;
+}
+
+h6 {
+  font-family: $monospace-font;
+  text-transform: uppercase;
+  color: $dark-gray;
+}
+
+.fas {
+  color: $light-gray;
+}
+
+.back {
+  color: $light-gray;
+  font-family: $monospace-font;
+  font-weight: 300;
+}
+
+.desc-link {
+  font-family: $body-font;
+  text-transform: underline;
+}
+
+.contact {
+  background-color: #C1BEE8;
+}
+
+.dark-text {
+  color: $light-gray;
+}
+
+.profile-image {
+  width: 50%;
+}

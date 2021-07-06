@@ -1,0 +1,50 @@
+<section class="min-vh-100 o-hidden bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+            <%= link_to pages_home_path do %>
+              <%= image_tag "louise-hill-logo.svg", alt: "Louise Hill logo", class: "navbar-brand" %>
+            <% end %>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <%= link_to "About", pages_about_path, class: "nav-link" %>
+                </li>
+              </ul>
+            </div>
+      </div>
+    </nav>
+
+  <div class="container d-flex">
+    <div class="">
+      <%= image_tag "louise-hill.png", alt: "Louise Hill", class: "profile-image" %>
+    </div>
+    <div class="">
+      <h1 class="text-white">Speaking the languages of tech, business and design</h1>
+      <p class="dark-text">I'm a highly strategic product designer and junior full-stack developer. I love coming up with a vision with an awesome team, keeping everyone motivated, and making it happen! I have a background in coding, graphic design, UX design, art direction, business operations and teaching. I use this accumulated knowledge to facilitate and create digital products and experiences that balance business, customer and technology requirements and achieve effective and measurable results. I live in sunny Lisbon so when I am not designing or coding I like to head to the beach, tend to my plant babies, DJ or get out in nature.</p>
+    </div>
+  </div>
+</section>
+
+<section class="min-vh-100 bg-primary">
+  <h1 class="text-white">Some of the brands I've worked with</h1>
+  <p class="dark-text">Over the years I’ve worked with companies of all shapes and sizes, both on a design and a consulting basis. Here are just a few.</p>
+  <div>
+      <%= image_tag "natural-history-museum.svg", alt: "Natural History Museum Logo" %>
+      <%= image_tag "detox-kitchen.svg", alt: "Detox Kitchen Logo" %>
+      <%= image_tag "happy-not-perfect.svg", alt: "Happy Not Perfect Logo" %>
+  </div>
+  <div>
+      <%= image_tag "rococo-chocolates.svg", alt: "Rococo Chocolates Logo" %>
+      <%= image_tag "pernod-ricard.svg", alt: "Pernod Ricard Logo" %>
+      <%= image_tag "ice.svg", alt: "Institution of Civil Engineers Logo" %>
+  </div>
+</section>
+
+<section class="min-vh-100 contact">
+  <h1>Let's work together</h1>
+  <h6>Email</h6>
+  <p>louisehilltech@gmail.com</p>
+</section>
