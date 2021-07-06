@@ -12,18 +12,33 @@
 @import "components/index";
 @import "pages/index";
 
-a {
-  font-family: $monospace-font;
-}
-
+// Global styling 
+// Type
 h6 {
   font-family: $monospace-font;
   text-transform: uppercase;
   color: $dark-gray;
 }
 
-.fas {
-  color: $light-gray;
+// Links
+a {
+  font-family: $monospace-font;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.link-external {
+  color: $darkest-gray;
+}
+
+.back-arrow {
+  width: 1rem;
+}
+
+.desc-link {
+  font-family: $body-font;
+  text-transform: underline;
 }
 
 .back {
@@ -32,19 +47,21 @@ h6 {
   font-weight: 300;
 }
 
-.desc-link {
-  font-family: $body-font;
-  text-transform: underline;
+// Opener
+.tags {
+  color: $dark-gray;
 }
 
-.contact {
-  background-color: #C1BEE8;
+.brand {
+  color: $gray;
 }
 
+// Case study
 .dark-text {
   color: $light-gray;
 }
 
-.profile-image {
-  width: 50%;
+.quote {
+  color: $dark-gray;
+  padding-top: 0.5rem;
 }
