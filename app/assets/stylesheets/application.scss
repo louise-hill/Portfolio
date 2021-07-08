@@ -71,7 +71,26 @@ a {
   color: $light-gray;
 }
 
+.bg-gray {
+  background-color: $lightest-gray;
+}
+
 .quote {
   color: $dark-gray;
   padding-top: 0.5rem;
+}
+
+.fixed-height {
+  height: 84vh;
+}
+
+.alignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered {
+  justify-content: center;
+  text-align: center; 
 }

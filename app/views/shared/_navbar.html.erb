@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <div class="container">
+    <%= link_to pages_home_path do %>
+    <%= image_tag("louise-hill-logo.svg", alt: "Louise Hill logo", class: "navbar-brand") %>
+    <% end %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <%= link_to "About", pages_about_path, class: "nav-link" %>
+                </li>
+            </ul>
+          </div>
+  </div>
+</nav>
