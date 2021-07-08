@@ -1,2 +1,141 @@
-<h1>Pages#inky</h1>
-<p>Find me in app/views/pages/inky.html.erb</p>
+<section class="bg-dark-blue min-vh-100">
+  <%= render 'shared/navbar' %>
+    <div class="container">
+      <div class="d-flex flex-column justify-content-between pt-5 fixed-height">
+        <span class="pt-3">
+          <%= link_to pages_home_path do %>
+          <%= image_tag("arrow-left.svg", alt: "Back arrow", class: "back-arrow") %>
+          <span class="back">All projects</span>
+          <% end %>
+        </span>
+          <div class="pb-5">
+            <h1 class="centered row display-2 text-white">Inky</h1>
+            <h6 class="centered text-center row brand">Design challenge</h6>
+          </div>
+            <div class="centered row pb-3">
+              <h6 class="tags pr-5">#UX research</h6>
+              <h6 class="tags">#Branding</h6>
+              <h6 class="tags pl-5">#UI design</h6>
+            </div>
+      </div>
+    </div>
+</section>
+
+<section class="min-vh-100 bg-dark-blue">
+  <div class="container">
+     <div class="row align-items-center py-3 mx-5">
+       <%= image_tag("inky-game.png", alt: "Inky game screen", class: "col-12 col-md-4 py-3") %>
+       <%= image_tag("inky-egg.png", alt: "Inky egg screen", class: "col-12 col-md-4 py-3") %>
+       <%= image_tag("inky-feed.png", alt: "Inky being fed", class: "col-12 col-md-4 py-3") %>
+     </div>
+  </div>
+</section>
+
+<section class="min-vh-100 bg-gray alignment">
+  <div class="align-items-center pb-5 pt-5">
+    <div class="container">
+      <h6 class="pt-3">The challenge</h6>
+      <h1 class="pb-5">How do you boost machine learning and AI, connect foreign language speakers and harness the opportunities of a ‘walkie talkie’ interaction?</h1>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 pb-3">
+            <h6>Background</h6>
+            <p>The brief was to design an app prototype which allows a user to communicate with another person speaking a different language using a ‘walkie-talkie’ interaction (one person speaks and then the other person speaks) in 3 days...</p>
+          </div>
+            <div class="col-sm-12 col-md-4 pb-3">
+              <h6>The outcome</h6>
+              <p>A game which helps kids to develop conversation skills by speaking to children in foreign countries.</p>
+              <p>Article published in UX Collective. Over 1k views so far...</p>
+            </div>
+              <div class="col-sm-12 col-md-4 pb-3">
+                <h6>Team</h6>
+                <p class="pb-3">Louise Hill</p>
+                <h6>Role</h6>
+                <p class="pb-3">UX Research, Strategy, Branding, UI design</p>
+              </div>
+        </div>
+          <div class="pt-3">
+            <%= link_to "#" do %>
+            <span>
+            <h6 class="link-external">User research article on UX Collective 
+            <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
+            </h6>
+            </span>
+            <% end %>
+         </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <%= image_tag("inky-phone.png", alt: "Kid playing Inky on their phone", class: "w-100") %>
+</section>
+
+<section class="min-vh-100 bg-light-blue alignment">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h1 class="pb-1">What could be the value of using a ‘walkie-talkie’ interaction?</h1>
+      </div>
+        <div class="col-sm-12 col-md-6">
+          <p>Talking to someone from a different country allows for the speaker to be an immediate expert on their own way of life, helping aid conversational confidence. Hiccups in communication are expected, lowering pressure. This provides the perfect space for young people still developing these skills to feel at ease.</p>
+          <p>Conversation challenges for young people with autism, ADHD and some other mental health disabilities may include knowing when to talk at the ‘appropriate’ moment or having difficulties reading body language. A ‘walkie-talkie’ interaction would remove these barriers and provide a comfortable space to practise new social skills and make friends.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="min-vh-100 bg-light-blue">
+  <div class="container pt-5">
+    <div class="row align-items-center py-3 mx-5">
+      <%= image_tag("inky-message-received.png", alt: "Message received screen", class: "col-12 col-md-4 py-3") %>
+      <%= image_tag("language-edit-screen.png", alt: "Editing screen for mis-translations", class: "col-12 col-md-4 py-3") %>
+      <%= image_tag("send-screen.png", alt: "Inky message send screen", class: "col-12 col-md-4 py-3") %>
+    </div>
+  </div>
+</section>
+
+<section class="min-vh-100 bg-light-blue alignment">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 pb-3">
+        <h1 class="pb-1">Removing language as a barrier to communication</h1>
+      </div>
+        <div class="col-sm-12 col-md-6 pb-3">
+          <p>The company I did the challenge for creates translation products for businesses using machine translation and AI. Its wider goal is to stop speaking a foreign language being a barrier to communication.</p>
+          <p>The app would help young people communicate more effectively with foreign language speakers. It could also help remove other barriers to understanding, positioning the company as a key player in the facilitation of communication as technology advances.</p>
+          <p>As an AI-driven company, processing quality data is essential. Younger age groups could provide a wider selection of language patterns and vocabulary with which to train neural networks/algorithms. Also, users with different socialising styles could potentially produce a richer variety of interaction data. This might help ensure future translation results are not biased in favour of those who are more confident socially.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <%= image_tag("inky-stickers.png", alt: "Collection of Inky stickers", class: "w-100") %>
+</section>
+
+<section class="min-vh-100 bg-gray alignment">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 pb-3">
+        <h1 class="pb-1">“I’m really competitive”</h1>
+        <p class="quote">Thomas, 12, Manchester</p>
+      </div>
+        <div class="col-sm-12 col-md-6 pb-3">
+          <p>An interview with Thomas, aged 12, highlighted a problem to solve in ideation: Thomas is incredibly competitive but also very chatty and sociable. He has had to quit sporting activities in the past because they have taken over too much of his life and prevented him from hanging out with friends. He also believes he is addicted to Fortnite and realises that playing it takes up a huge amount of his time. So I wanted to reward Thomas for being sociable in a game, rather than for being competitive.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="min-vh-100 bg-white">
+  <h1>video to go here of prototype</h1>
+</section>
+
+<section class="bg-dark-pink alignment py-5">
+  <div class="py-5">
+    <h6 class="centered row brand">Next project</h6>
+    <h1 class="centered row display-2 text-white">Patched</h1>
+  </div>
+</section>

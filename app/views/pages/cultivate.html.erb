@@ -1,42 +1,24 @@
-<section class="min-vh-100 o-hidden bg-dark-green">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<section class="bg-dark-green min-vh-100">
+  <%= render 'shared/navbar' %>
     <div class="container">
-      <%= link_to pages_home_path do %>
-      <%= image_tag("louise-hill-logo.svg", alt: "Louise Hill logo", class: "navbar-brand") %>
-      <% end %>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-              <%= link_to "About", pages_about_path, class: "nav-link" %>
-              </li>
-            </ul>
+      <div class="d-flex flex-column justify-content-between pt-5 fixed-height">
+        <span class="pt-3">
+          <%= link_to pages_home_path do %>
+          <%= image_tag("arrow-left.svg", alt: "Back arrow", class: "back-arrow") %>
+          <span class="back">All projects</span>
+          <% end %>
+        </span>
+          <div class="pb-5">
+            <h1 class="centered row display-2 text-white">Cultivate</h1>
+            <h6 class="centered text-center row brand">By Farmdrop</h6>
           </div>
-    </div>
-  </nav>
-  <div class="container">
-      <div class="pt-5">
-        <div class="top">
-          <span>
-            <%= link_to pages_home_path, class: "" do %>
-            <%= image_tag("arrow-left.svg", alt: "Back arrow", class: "back-arrow") %>
-            <span class="back">All projects</span>
-            <% end %>
-          </span>
-        </div>
-          <div class="">
-            <h1 class="justify-content-center text-center row display-2 text-white">Cultivate</h1>
-            <h6 class="justify-content-center text-center row brand">By Farmdrop</h6>
-          </div>
-            <div class="row text-center justify-content-center">
+            <div class="centered row pb-3">
               <h6 class="tags pr-5">#UX research</h6>
               <h6 class="tags">#Branding</h6>
               <h6 class="tags pl-5">#UI design</h6>
             </div>
       </div>
-  </div>
+    </div>
 </section>
 
 <section class="min-vh-100 bg-dark-green">
@@ -49,38 +31,42 @@
   </div>
 </section>
 
-<section class="min-vh-100 bg-gray">
+<section class="min-vh-100 bg-gray alignment">
   <div class="align-items-center pb-5 pt-5">
+    <div class="container">
+      <h6 class="pt-3">The challenge</h6>
+      <h1 class="pb-5">Design an app prototype in 2 weeks which provides customers with an opportunity to track their health and book onto events.</h1>
+    </div>
       <div class="container">
-        <h6 class="pt-3">The challenge</h6>
-         <h1 class="pb-5">Design an app prototype in 2 weeks which provides customers with an opportunity to track their health and book onto events.</h1>
-      </div>
-        <div class="container">
-          <div class="row">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 pb-3">
+            <h6>Background</h6>
+            <p>Farmdrop is a British sustainable and ethical food delivery company which provides customers with farm-fresh food, locally-sourced fish, everyday essentials and household goods. They are on a mission to “fix the food chain” and pay farmers 70% of profits made from food they sell.</p>
+          </div>
             <div class="col-sm-12 col-md-4 pb-3">
-              <h6>Background</h6>
-              <p>Farmdrop is a British sustainable and ethical food delivery company which provides customers with farm-fresh food, locally-sourced fish, everyday essentials and household goods. They are on a mission to “fix the food chain” and pay farmers 70% of profits made from food they sell.</p>
+              <h6>The outcome</h6>
+              <p>In just 2 weeks our team of 3 researched and created a high fidelity prototype of an app that gamified health tracking. Through syncing shopping points and viewing health data, Farmdrop customers could unlock events to attend with their friends.</p>
             </div>
               <div class="col-sm-12 col-md-4 pb-3">
-                <h6>The outcome</h6>
-                <p>In just 2 weeks our team of 3 researched and created a high fidelity prototype of an app that gamified health tracking. Through syncing shopping points and viewing health data, Farmdrop customers could unlock events to attend with their friends.</p>
+                <h6>Team</h6>
+                <p class="pb-3"><u>
+                <%= link_to "Oliver Shaw", "#", class: "desc-link"  %></u>, 
+                <u>
+                <%= link_to "Christine Anh Hoang", "#", class: "desc-link" %>
+                </u>, Louise Hill</p>
+                <h6>Role</h6>
+                <p class="pb-3">UX Research, Strategy, Branding, UI design</p>
+                <h6>Project type</h6>
+                <p class="pb-3">Student, concept @ General Assembly</p>
               </div>
-                <div class="col-sm-12 col-md-4 pb-3">
-                  <h6>Team</h6>
-                  <p class="pb-3"><u><%= link_to "Oliver Shaw", "#", class: "desc-link"  %></u>, <u><%= link_to "Christine Anh Hoang", "#", class: "desc-link" %></u>, Louise Hill</p>
-                  <h6>Role</h6>
-                  <p class="pb-3">UX Research, Strategy, Branding, UI design</p>
-                  <h6>Project type</h6>
-                  <p class="pb-3">Student, concept @ General Assembly</p>
-                </div>
-          </div>
-            <%= link_to "#" do %>
-              <span>
-              <h6 class="link-external">In-depth user research article on medium
-              <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
-              </h6>
-              </span>
-            <% end %>
+        </div>
+          <%= link_to "#" do %>
+          <span>
+          <h6 class="link-external">In-depth user research article on medium
+          <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
+          </h6>
+          </span>
+          <% end %>
       </div>
   </div>
 </section>
@@ -89,41 +75,41 @@
   <%= image_tag("cultivate-billboard.png", alt: "Cultivate home screen", class: "w-100") %>
 </section>
 
-<section class="min-vh-100 bg-light-green">
-  <div class="d-flex align-items-center">
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col-sm-12 col-md-6 pb-3">
-          <h1 class="pb-1">"I feel guilty when I don’t reach my health goals"</h1>
-          <p class="quote">Monica, target Farmdrop customer</p>
-        </div>
-          <div class="col-sm-12 col-md-6 pb-3">
-            <p>Surveys and interviews with Farmdrop customers and target future customers showed an audience who regularly track their fitness with texhnology and lead very healthy lifestyles.</p>
-            <p>So how could Farmdrop help?</p>
-            <p>We noticed a trend in feeling guilty or bad when not hitting lifestyle goals. We saw an opportunity to offer health-tracking with a unique twist...</p>
-          </div>
+<section class="min-vh-100 bg-light-green alignment">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h1 class="pb-1">"I feel guilty when I don’t reach my health goals"</h1>
+        <p class="quote">Monica, target Farmdrop customer</p>
       </div>
+        <div class="col-sm-12 col-md-6">
+          <p>Surveys and interviews with Farmdrop customers and target future customers showed an audience who regularly track their fitness with texhnology and lead very healthy lifestyles.</p>
+          <p>So how could Farmdrop help?</p>
+          <p>We noticed a trend in feeling guilty or bad when not hitting lifestyle goals. We saw an opportunity to offer health-tracking with a unique twist...</p>
+        </div>
     </div>
   </div>
 </section>
 
 <section class="min-vh-100 bg-light-green">
   <div class="container pt-5">
-     <div class="row align-items-center py-3 mx-5">
-       <%= image_tag("welcome-screen.png", alt: "Cultivate welcome screen", class: "col-12 col-md-4 py-3") %>
-       <%= image_tag("works.png", alt: "Cultivate how it works screen", class: "col-12 col-md-4 py-3") %>
-       <%= image_tag("sync.png", alt: "Cultivate sync screen", class: "col-12 col-md-4 py-3") %>
-     </div>
+    <div class="row align-items-center py-3 mx-5">
+      <%= image_tag("welcome-screen.png", alt: "Cultivate welcome screen", class: "col-12 col-md-4 py-3") %>
+      <%= image_tag("works.png", alt: "Cultivate how it works screen", class: "col-12 col-md-4 py-3") %>
+      <%= image_tag("sync.png", alt: "Cultivate sync screen", class: "col-12 col-md-4 py-3") %>
+    </div>
   </div>
 </section>
 
-<section class="min-vh-100 bg-light-green">
-  <div class="container pt-5">
-    <div class="row pt-5">
+<section class="min-vh-100 bg-light-green alignment">
+  <div class="container">
+    <div class="row">
       <div class="col-sm-12 col-md-6 pb-3">
         <h1 class="pb-1">“I could quite fairly be accused of being a founder who is more driven by ethics than profit — because I am”</h1>
         <p class="quote">Ben Pugh, CEO, Farmdrop</p>
-        <p class=""><u><%= link_to "Sifted.eu", "#", class: "desc-link" %></u></p>
+        <p><u>
+        <%= link_to "Sifted.eu", "#", class: "desc-link" %>
+        </u></p>
       </div>
         <div class="col-sm-12 col-md-6 pb-3">
           <p>We had to incorporate Farmdrop’s values and culture. We needed to create a product which fit seemlessly with their current mix of apps and services.</p>
@@ -137,9 +123,9 @@
   <%= image_tag("cultivate-phone-mockup.png", alt: "Cultivate app on a phone", class: "w-100") %>
 </section>
 
-<section class="min-vh-100 bg-gray">
-  <div class="container pt-5">
-    <div class="row pt-5">
+<section class="min-vh-100 bg-gray alignment">
+  <div class="container">
+    <div class="row">
       <div class="col-sm-12 col-md-6 pb-3">
         <h1 class="pb-1">“Relaxing for me is doing fun activities with my friends”</h1>
         <p class="quote">Alma, Farmdrop customer</p>
@@ -152,6 +138,13 @@
   </div>
 </section>
 
-<section class="min-vh-100 bg-white"
+<section class="min-vh-100 bg-white">
   <h1>video to go here of prototype</h1>
+</section>
+
+<section class="bg-dark-blue alignment py-5">
+  <div class="py-5">
+    <h6 class="centered row brand">Next project</h6>
+    <h1 class="centered row display-2 text-white">Inky</h1>
+  </div>
 </section>
