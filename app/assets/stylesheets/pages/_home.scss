@@ -1,0 +1,24 @@
+.lowercase {
+    text-transform: capitalize;
+    color: $darkest-gray;
+}
+
+.projects {
+    font-family: $monospace-font;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.featured {
+    border-radius: 35px;
+    height: 300px;
+    object-fit: cover;
+    background: center;
+}
+
+.featured-cultivate {
+    border-radius: 35px;
+    height: 600px;
+    object-fit: cover;
+    background: center;
+}

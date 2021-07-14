@@ -1,0 +1,33 @@
+.card-background-cultivate {
+  background-color: $dark-green;
+  height: 278px;
+  width: 384px;
+  background-position: center;
+  object-fit: cover;
+  background-size: 84%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.card-background-patched {
+  background-color: $dark-pink;
+  height: 278px;
+  width: 384px;
+}
+
+.card-background-inky {
+  background-color: $dark-blue;
+  height: 278px;
+  width: 384px;
+  background-position: center;
+  object-fit: cover;
+  background-size: 84%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.card-background-smb {
+  background-color: $dark-charcoal;
+  height: 278px;
+  width: 384px;
+}

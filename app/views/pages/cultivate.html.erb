@@ -2,7 +2,7 @@
   <%= render 'shared/navbar' %>
     <div class="container">
       <div class="d-flex flex-column justify-content-between pt-5 fixed-height">
-        <span class="pt-3">
+        <span class="pt-3 pl-3">
           <%= link_to pages_home_path do %>
           <%= image_tag("arrow-left.svg", alt: "Back arrow", class: "back-arrow") %>
           <span class="back">All projects</span>
@@ -10,7 +10,7 @@
         </span>
           <div class="pb-5">
             <h1 class="centered row display-2 text-white">Cultivate</h1>
-            <h6 class="centered text-center row brand">By Farmdrop</h6>
+            <h6 class="centered row text-center brand">By Farmdrop</h6>
           </div>
             <div class="centered row pb-3">
               <h6 class="tags pr-5">#UX research</h6>
@@ -31,7 +31,7 @@
   </div>
 </section>
 
-<section class="min-vh-100 bg-gray alignment">
+<section class="min-vh-100 bg-gray alignment mx-5">
   <div class="align-items-center pb-5 pt-5">
     <div class="container">
       <h6 class="pt-3">The challenge</h6>
@@ -77,8 +77,8 @@
 
 <section class="min-vh-100 bg-light-green alignment">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-6">
+    <div class="row mx-5">
+      <div class="col-sm-12 col-md-6 pb-3">
         <h1 class="pb-1">"I feel guilty when I don’t reach my health goals"</h1>
         <p class="quote">Monica, target Farmdrop customer</p>
       </div>
@@ -92,18 +92,18 @@
 </section>
 
 <section class="min-vh-100 bg-light-green">
-  <div class="container pt-5">
-    <div class="row align-items-center py-3 mx-5">
-      <%= image_tag("welcome-screen.png", alt: "Cultivate welcome screen", class: "col-12 col-md-4 py-3") %>
-      <%= image_tag("works.png", alt: "Cultivate how it works screen", class: "col-12 col-md-4 py-3") %>
-      <%= image_tag("sync.png", alt: "Cultivate sync screen", class: "col-12 col-md-4 py-3") %>
+  <div class="container">
+    <div class="row align-items-center mx-5">
+      <%= image_tag("welcome-screen.png", alt: "Cultivate welcome screen", class: "col-12 col-md-4 pb-3") %>
+      <%= image_tag("works.png", alt: "Cultivate how it works screen", class: "col-12 col-md-4 pb-3") %>
+      <%= image_tag("sync.png", alt: "Cultivate sync screen", class: "col-12 col-md-4 pb-3") %>
     </div>
   </div>
 </section>
 
 <section class="min-vh-100 bg-light-green alignment">
   <div class="container">
-    <div class="row">
+    <div class="row mx-5">
       <div class="col-sm-12 col-md-6 pb-3">
         <h1 class="pb-1">“I could quite fairly be accused of being a founder who is more driven by ethics than profit — because I am”</h1>
         <p class="quote">Ben Pugh, CEO, Farmdrop</p>
@@ -125,12 +125,12 @@
 
 <section class="min-vh-100 bg-gray alignment">
   <div class="container">
-    <div class="row">
+    <div class="row mx-5">
       <div class="col-sm-12 col-md-6 pb-3">
         <h1 class="pb-1">“Relaxing for me is doing fun activities with my friends”</h1>
         <p class="quote">Alma, Farmdrop customer</p>
       </div>
-        <div class="col-sm-12 col-md-6 pb-3">
+        <div class="col-sm-12 col-md-6">
           <p>We noticed another nice business opportunity. Our interviewees led busy social lives and loved to attend events with their friends. When we asked how they found out about Farmdrop we discovered it was typically through a friend’s recommendation, so we knew inviting friends along to events through a free ticket could be a great way to further build the Farmdrop community.</p>
           <p>Enter Cultivate—an app which rewards customers for making healthy choices through unlocking fun events to attend with friends, whilst offering a more balanced approach to keeping fit and healthy.</p>
         </div>
@@ -138,13 +138,15 @@
   </div>
 </section>
 
-<section class="min-vh-100 bg-white">
-  <h1>video to go here of prototype</h1>
+<section class="bg-video">
+  <div style="padding:50.88% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/568213359?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Cultivate App"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 </section>
 
 <section class="bg-dark-blue alignment py-5">
   <div class="py-5">
-    <h6 class="centered row brand">Next project</h6>
-    <h1 class="centered row display-2 text-white">Inky</h1>
+    <%= link_to pages_home_path do %>
+      <h6 class="centered row brand">Next project</h6>
+      <h1 class="centered row display-2 text-white hover-link">Inky</h1>
+    <% end %>
   </div>
 </section>

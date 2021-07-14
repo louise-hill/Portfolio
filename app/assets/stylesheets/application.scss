@@ -43,7 +43,7 @@ a {
 
 .up-arrow {
   width: 1rem;
-  padding-bottom: 0.1rem;
+  padding-bottom: 0.1em;
 }
 
 .desc-link {
@@ -66,18 +66,30 @@ a {
   color: $lightest-gray;
 }
 
+.bg-dark-primary {
+  background-color: $mid-navy;
+}
+
+.bg-darkest-primary {
+  background-color: $dark-navy;
+}
+
 // Case study
 .dark-text {
-  color: $light-gray;
+  color: $gray;
 }
 
 .bg-gray {
   background-color: $lightest-gray;
 }
 
+.bg-video {
+  background-color: #eef1f4;
+}
+
 .quote {
   color: $dark-gray;
-  padding-top: 0.5rem;
+  padding-top: 0.5em;
 }
 
 .fixed-height {
@@ -93,4 +105,9 @@ a {
 .centered {
   justify-content: center;
   text-align: center; 
+}
+
+// Footer
+.bg-darkestgray {
+  background-color: $darkest-gray;
 }

@@ -2,7 +2,7 @@
   <%= render 'shared/navbar' %>
     <div class="container">
       <div class="d-flex flex-column justify-content-between pt-5 fixed-height">
-        <span class="pt-3">
+        <span class="pt-3 pl-3">
           <%= link_to pages_home_path do %>
           <%= image_tag("arrow-left.svg", alt: "Back arrow", class: "back-arrow") %>
           <span class="back">All projects</span>
@@ -139,7 +139,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6 pb-3">
-        <h1 class="pb-1">“There is considerable evidence that 120 minutes’ exposure to nature a week is a key factor in maintaining positive mental health.”</h1>
+        <h1 class="pb-1">“120 minute's exposure to nature a week is a key factor in maintaining positive mental health.”</h1>
         <p class="quote pt-3">Dr Alan Kellas, Green Care Lead, Royal College of Psychiatrists</p>
         <p><u>
           <%= link_to "theguardian.com", "#", class: "desc-link" %>
@@ -158,13 +158,15 @@
   </div>
 </section>
 
-<section class="min-vh-100 bg-white">
-  <h1>video to go here of prototype</h1>
+<section class="bg-video">
+  <div style="padding:50.88% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/574032627?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Patched"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 </section>
 
 <section class="bg-dark-charcoal alignment py-5">
   <div class="py-5">
-    <h6 class="centered row brand">Next project</h6>
-    <h1 class="centered row display-2 text-white">SMB Tool</h1>
+    <%= link_to pages_home_path do %>
+      <h6 class="centered row brand">Next project</h6>
+      <h1 class="centered row display-2 text-white hover-link">SMB Tool</h1>
+    <% end %>
   </div>
 </section>

@@ -1,5 +1,37 @@
 <section class="bg-primary min-vh-100">
   <%= render 'shared/navbar' %>
-    <div class="container">
+    <div class="d-flex flex-column justify-content-center fixed-height">
+      <h1 class="centered row display-2 text-white">Louise Hill</h1>
+      <h6 class="centered text-center projects row">Digital Product Designer</h6>
     </div>
-</section>
+  </section>
+
+  <section class="bg-dark-primary min-vh-100">
+    <div class="container py-5">
+      <p class="projects centered pt-5 pb-5">Projects</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 pb-5">
+            <%= link_to pages_cultivate_path do %>
+              <%= image_tag("cultivate-billboard.png", alt: "Cultivate billboard", class: "featured-cultivate w-100") %>
+              <h1 class="text-white pt-4 centered">Cultivate</h1>
+              <% end %>
+              <p class="dark-text pt-1 centered px-5">How do you help people feel good about tracking their health?</p>
+           </div>
+              <div class="col-sm-12 col-md-6 pb-5 pt-5">
+                <%= link_to pages_inky_path do %>
+                  <%= image_tag("inky-phone.png", alt: "Kid using Inky app", class: "featured w-100") %>
+                  <h1 class="text-white pt-4 centered">Inky</h1>
+                  <% end %>
+                  <p class="dark-text pt-1 centered px-5">How do you boost machine learning and AI, connect foreign language speakers and harness the opportunities of a ‘walkie talkie’ interaction?</p>
+              </div>
+                  <div class="col-sm-12 col-md-6 pb-5 pt-5">
+                    <%= link_to pages_patched_path do %>
+                      <%= image_tag("patched-tote-bag.png", alt: "Patched tote bag", class: "featured w-100") %>
+                      <h1 class="text-white pt-4 centered">Patched</h1>
+                      <% end %>
+                      <p class="dark-text pt-1 px-5 centered">If you have a team of 4, 10 days, and free reign to build anything, what do you make?</p>
+                  </div>
+        </div>
+      <h6 class="lowercase pt-5">©2021 All rights reserved</h6>
+    </div>
+  </section>
