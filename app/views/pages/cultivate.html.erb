@@ -1,14 +1,19 @@
 <section class="bg-dark-green min-vh-100">
   <%= render 'shared/navbar' %>
     <div class="container">
-      <div class="d-flex flex-column justify-content-center fixed-height">
-            <h1 class="centered row display-4 text-white">Cultivate</h1>
-            <h6 class="centered text-center row brand">By Farmdrop</h6>
+      <div class="row align-items-center fixed-height d-flex">
+        <div class="col-sm-12 col-md-6 centered">
+          <%= image_tag("case-cultivate.png", alt: "cultivate phone mockup", class: "profile-image") %>
+        </div>
+          <div class="col-sm-12 col-md-6 pt-4">
+            <h6 class="brand">Cultivate by Farmdrop</h6>
+            <h1 class="text-white">Health tracking with a difference</h1>
+          </div>
       </div>
-        <div class="pb-5 row centered">
+    </div>
+        <div class="centered">
           <%= image_tag("scroll-arrow.svg", alt: "Scroll arrow", class: "bouncing-arrow") %>
         </div>
-      </div>
 </section>
 
 <section class="min-vh-50 bg-dark-green">
