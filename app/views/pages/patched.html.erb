@@ -1,37 +1,27 @@
 <section class="bg-dark-pink min-vh-100">
-  <%= render 'shared/navbar' %>
-    <div class="container">
-      <div class="d-flex flex-column justify-content-between pt-5 fixed-height">
-        <span class="pt-3 pl-3">
-          <%= link_to pages_home_path do %>
-          <%= image_tag("arrow-left.svg", alt: "Back arrow", class: "back-arrow") %>
-          <span class="back">All projects</span>
-          <% end %>
-        </span>
-          <div class="pb-5">
-            <h1 class="centered row display-2 text-white">Patched</h1>
-            <h6 class="centered text-center row brand">Le Wagon</h6>
-          </div>
-            <div class="centered row pb-3">
-              <h6 class="tags pr-5">#UI design</h6>
-              <h6 class="tags">#Full-stack development</h6>
-              <h6 class="tags pl-5">#Branding</h6>
-            </div>
+<%= render 'shared/navbar' %>
+  <div class="container">
+    <div class="d-flex flex-column justify-content-center fixed-height">
+          <h1 class="centered row display-4 text-white">Patched</h1>
+          <h6 class="centered text-center row brand">Le Wagon</h6>
+    </div>
+      <div class="pb-5 row centered">
+        <%= image_tag("scroll-arrow.svg", alt: "Scroll arrow", class: "bouncing-arrow") %>
       </div>
     </div>
 </section>
 
-<section class="min-vh-100 bg-dark-pink">
+<section class="min-vh-50 bg-dark-pink">
   <div class="container">
-     <div class="row align-items-center py-3 mx-5">
-       <%= image_tag("patched-planting.png", alt: "Patched planting screen", class: "col-12 col-md-4 py-3") %>
-       <%= image_tag("patched-home-screen.png", alt: "Patched home screen", class: "col-12 col-md-4 py-3") %>
-       <%= image_tag("patched-setup-screen.png", alt: "Patched set-up screen", class: "col-12 col-md-4 py-3") %>
+     <div class="row align-items-center py-5 mx-5">
+       <%= image_tag("patched-planting.png", alt: "Patched planting screen", class: "col-12 col-md-6 col-lg-4 py-3") %>
+       <%= image_tag("patched-home-screen.png", alt: "Patched home screen", class: "col-12 col-md-6 col-lg-4 py-3") %>
+       <%= image_tag("patched-setup-screen.png", alt: "Patched set-up screen", class: "col-12 col-md-6 col-lg-4 py-3") %>
      </div>
   </div>
 </section>
 
-<section class="min-vh-100 bg-gray alignment">
+<section class="min-vh-50 bg-gray alignment">
   <div class="align-items-center pb-5 pt-5">
     <div class="container">
       <h6 class="pt-3">The challenge</h6>
@@ -53,19 +43,20 @@
                 <h6>Team</h6>
                 <p class="pb-3">Patrícia Amaral Nunes, Luís Vaz Pinto, Mariana Saavedra, Louise Hill</p>
                 <h6>Role</h6>
-                <p class="pb-3">Concept, UX design, UI design Front-end and back-end development</p>
+                <p class="kill">Concept, UX design, UI design</p>
+                <p class="pb-3">Front-end and back-end development</p>
                 <h6>Project type</h6>
-                <p class="pb-3">Student, concept @ Le Wagon</p>
+                <p class="pb-3">Student, @ <u><%= link_to "Le Wagon, Lisbon", "https://www.lewagon.com/lisbon", target: :_blank, class: "desc-link" %></u></p>
               </div>
         </div>
-          <%= link_to "#" do %>
+          <%= link_to "https://github.com/lvazpinto/Patched", target: :_blank do %>
           <span>
           <h6 class="link-external">The code on Github
           <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
           </h6>
           </span>
           <% end %>
-          <%= link_to "#" do %>
+          <%= link_to "http://www.patched.me", target: :_blank do %>
           <span>
           <h6 class="link-external">Patched app on mobile
           <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
@@ -80,13 +71,13 @@
   <%= image_tag("patched-tote-bag.png", alt: "Tote bag saying - here for you from planting to plate", class: "w-100") %>
 </section>
 
-<section class="min-vh-100 bg-light-pink alignment">
-  <div class="container">
-    <div class="row">
+<section class="min-vh-50 bg-gray alignment">
+  <div class="container py-5">
+    <div class="row py-5">
       <div class="col-sm-12 col-md-6">
         <h1 class="pb-3">“Most of the gardening blogs and websites did not provide the right information, or communicated it in very complicated terms”</h1>
         <p class="pb-3"><u>
-          <%= link_to "plantedwell.com", "#", class: "desc-link"  %></u>
+          <%= link_to "plantedwell.com", "https://www.plantedwell.com/gardening-websites-blogs", target: :_blank, class: "desc-link"  %></u>
       </div>
         <div class="col-sm-12 col-md-6">
           <p>I had an afternoon to come up with an app idea so I interviewed a friend. He is an organic gardening enthusiast and opened my eyes to the difficulties of keeping away pests without using harmful chemicals.</p>
@@ -96,36 +87,34 @@
   </div>
 </section>
 
-<section class="min-vh-100 bg-light-pink">
-  <div class="container pt-5">
+<section class="min-vh-50 bg-light-pink">
+  <div class="container py-5">
     <div class="row align-items-center py-3 mx-5">
-      <%= image_tag("vegetable-selection.png", alt: "Vegetable selection screen", class: "col-12 col-md-4 py-3") %>
-      <%= image_tag("watering-care-screen.png", alt: "Tips on how to water the patch", class: "col-12 col-md-4 py-3") %>
-      <%= image_tag("harvest-screen.png", alt: "Vegetable harvest screen", class: "col-12 col-md-4 py-3") %>
+      <%= image_tag("vegetable-selection.png", alt: "Vegetable selection screen", class: "col-12 col-md-6 col-lg-4 py-3") %>
+      <%= image_tag("watering-care-screen.png", alt: "Tips on how to water the patch", class: "col-12 col-md-6 col-lg-4 py-3") %>
+      <%= image_tag("harvest-screen.png", alt: "Vegetable harvest screen", class: "col-12 col-md-6 col-lg-4 py-3") %>
     </div>
   </div>
 </section>
 
-<section class="min-vh-100 bg-light-pink alignment">
-  <div class="container">
-    <div class="row">
+<section class="min-vh-50 bg-light-pink alignment">
+  <div class="container py-5">
+    <div class="row py-5">
       <div class="col-sm-12 col-md-6 pb-3">
         <h1 class="pb-1">“Almost 3 million new gardening projects in the last year, nearly half of new gardeners under 45”</h1>
-        <p class="quote pb-3">
-        <u><%= link_to "hortweek.com", "#", class: "desc-link" %>
+        <p class="quote">
+        <u><%= link_to "hortweek.com", "https://www.hortweek.com/new-gardener-estimates-treble-month/retail/article/1693981", target: :_blank, class: "desc-link" %>
         </u>
       </div>
         <div class="col-sm-12 col-md-6 pb-3">
-          <p>Research showed a huge boost in gardening during the Corona pandemic, especially amongst under 45s. The<u> 
-          <%= link_to "HTA Garden Retail Monitor", "#", class: "desc-link" %>
-          </u>found that sales of gardening products were up 34%, 17% and 19% in June, July and August respectively in UK garden centres in 2020, compared to 2019. On average, individual customers were spending 35% more on gardening products. In fact, the<u>
-          <%= link_to "Royal Horticultural Society", "#", class: "desc-link" %>
-          </u>believes gardening is entering a new “golden age”.</p>
-          <p>And what about eco-gardening?<u>
-          <%= link_to "67% of UK gardeners", "#", class: "desc-link" %>
-          </u>say they’re eco-conscious and 46% of this group already use organic fertilisers.<u>
-          <%= link_to "The 2021 Organic Market Report", "#", class: "desc-link" %>
-          </u>revealed the highest year-on-year growth in 15 years for the organic market, at +12.6%, with the market now worth £2.79B.</p>
+          <p>Research showed a huge boost in gardening during the Corona pandemic, especially amongst under 45s. The <u>
+          <%= link_to "HTA Garden Retail Monitor", "https://hta.org.uk/", target: :_blank, class: "desc-link" %>
+          </u> found that sales of gardening products were up 34%, 17% and 19% in June, July and August respectively in UK garden centres in 2020, compared to 2019. On average, individual customers were spending 35% more on gardening products. In fact, the <u>
+          <%= link_to "Royal Horticultural Society", "https://www.ft.com/content/c3abc0bb-7ade-4ae1-8d2b-d3fa6be53416", target: :_blank, class: "desc-link" %>
+          </u> believes gardening is entering a new “golden age”.</p>
+          <p>And what about eco-gardening? <u>
+          <%= link_to "67% of UK gardeners", "https://www.hortweek.com/covid-19-transformed-gardening-industry-%E2%80%93-so-new-trends/retail/article/1701037", target: :_blank, class: "desc-link" %></u> say they’re eco-conscious and 46% of this group already use organic fertilisers. 
+          <u><%= link_to "The 2021 Organic Market Report", "https://www.soilassociation.org/certification/market-research-and-data/the-organic-market-report-2021/", target: :_blank, class: "desc-link" %></u> revealed the highest year-on-year growth in 15 years for the organic market, at +12.6%, with the market now worth £2.79B.</p>
         </div>
     </div>
   </div>
@@ -135,23 +124,21 @@
   <%= image_tag("tomatoes-planting.png", alt: "Patched tomato planting screen", class: "w-100") %>
 </section>
 
-<section class="min-vh-100 bg-gray alignment">
-  <div class="container">
-    <div class="row">
+<section class="min-vh-50 bg-gray alignment">
+  <div class="container py-5">
+    <div class="row py-5">
       <div class="col-sm-12 col-md-6 pb-3">
-        <h1 class="pb-1">“120 minute's exposure to nature a week is a key factor in maintaining positive mental health.”</h1>
+        <h1 class="">“120 minute's exposure to nature a week is a key factor in maintaining positive mental health.”</h1>
         <p class="quote pt-3">Dr Alan Kellas, Green Care Lead, Royal College of Psychiatrists</p>
         <p><u>
-          <%= link_to "theguardian.com", "#", class: "desc-link" %>
+          <%= link_to "theguardian.com", "https://www.theguardian.com/world/2020/may/17/how-lockdown-has-created-veg-growing-revolution-uk-coronavirus", target: :_blank, class: "desc-link" %>
           </u></p>
       </div>
         <div class="col-sm-12 col-md-6 pb-3">
-          <p>The mental health benefits of gardening have been widely documented. A huge study by the<u>
-          <%= link_to "University of Exeter", "#", class: "desc-link" %>
-          </u>on gardens and gardening showed that people who spent time in the garden report better physical and mental health levels than those who do not.</p>
+          <p>The mental health benefits of gardening have been widely documented. A huge study by the <u>
+          <%= link_to "University of Exeter", "https://www.exeter.ac.uk/news/research/title_793983_en.html", target: :_blank, class: "desc-link" %></u> on gardens and gardening showed that people who spent time in the garden report better physical and mental health levels than those who do not.</p>
           <p><u>
-          <%= link_to "The eco plusses of gardening are also considerable", "#", class: "desc-link" %>
-          </u>—from supporting beneficial insects and birds, to reducing the carbon footprint of home-grown food, to increasing oxygen in the air.</p>
+          <%= link_to "The eco plusses of gardening are also considerable", "https://usgreentechnology.com/environmental-benefits-gardening", target: :_blank, class: "desc-link" %></u>—from supporting beneficial insects and birds, to reducing the carbon footprint of home-grown food, to increasing oxygen in the air.</p>
           <p>As a team we decided on what was feasible to build in the timeframe and focused on growing vegetables so there would be a delicious reward at the end of each growing cycle.</p>
         </div>
     </div>
@@ -164,9 +151,9 @@
 
 <section class="bg-dark-charcoal alignment py-5">
   <div class="py-5">
-    <%= link_to pages_home_path do %>
+    <%= link_to pages_smb_path do %>
       <h6 class="centered row brand">Next project</h6>
-      <h1 class="centered row display-2 text-white hover-link">SMB Tool</h1>
+      <h1 class="centered row display-4 text-white d-inline-block next-arrow">SMB Tool<%= image_tag("link-arrow.svg", alt: "link arrow", class: "pl-3") %></h1>
     <% end %>
   </div>
 </section>

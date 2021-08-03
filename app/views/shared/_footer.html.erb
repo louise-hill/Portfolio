@@ -1,32 +1,41 @@
 <footer class="py-5 text-light bg-darkestgray" id="footer">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div>
-      <h6 class="link-external">Website coded by Louise on Ruby on Rails</h6>
-    </div>
-      <div class="d-flex">
-        <%= link_to "#" do %>
-          <span>
-            <h6 class="link-external pr-5">Github
-            <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
-            </h6>
-          </span>
-        <% end %>
-              
-        <%= link_to "#" do %>
-          <span>
-            <h6 class="link-external">Medium
-            <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
-            </h6>
-          </span>
-        <% end %>
-        
-        <%= link_to "#" do %>
-          <span>
-            <h6 class="link-external pl-5">Linkedin
-            <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
-            </h6>
-          </span>
-        <% end %>
+  <div class="container align-items-center">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <%= image_tag("louise-hill-logo.svg", alt: "Louise Hill logo", class: "pb-3") %>
+        <h6 class="footer pt-3 pb-3">©2021 All rights reserved</h6>
+        <h6 class="footer pb-3">Website coded by Louise in Ruby on Rails</h6>
+      </div>
+        <div class="col-sm-12 col-md-6 d-flex justify-content-between align-items-center">
+          <div>
+          <%= link_to "https://github.com/louise-hill", target: :_blank do %>
+            <span>
+              <h6 class="link-external">Github
+              <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
+              </h6>
+            </span>
+          <% end %>
+          </div>
+
+          <div> 
+          <%= link_to "https://louisehilltech.medium.com", target: :_blank do %>
+            <span>
+              <h6 class="link-external">Medium
+              <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
+              </h6>
+            </span>
+          <% end %>
+          </div>
+          
+          <div>
+          <%= link_to "https://www.linkedin.com/in/louisehilltech", target: :_blank do %>
+            <span>
+              <h6 class="link-external">Linkedin
+              <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
+              </h6>
+            </span>
+          <% end %>
+          </div>
       </div>
   </div>
 </footer>

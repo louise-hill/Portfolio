@@ -1,0 +1,20 @@
+.next-arrow {
+    &:hover {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        padding-right: 0px;
+        padding-left: 16px;
+      }
+      
+      &:after {
+        content: '';
+        position: absolute;
+        opacity: 0;  
+        right: -16px;
+        transition: 0.8s;
+        opacity: 1;
+        right: 10px;
+      }
+}

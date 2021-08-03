@@ -21,6 +21,11 @@ h6 {
   font-weight: 300;
 }
 
+.kill {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
 // Links
 a {
   font-family: $monospace-font;
@@ -52,7 +57,7 @@ a {
 }
 
 .back {
-  color: $light-gray;
+  color: $lighter-gray;
   font-family: $monospace-font;
   font-weight: 300;
 }
@@ -60,18 +65,17 @@ a {
 // Opener
 .tags {
   color: $gray;
+  flex-direction: column;
+  font-family: $body-font;
+  text-transform: none;
 }
 
 .brand {
   color: $lightest-gray;
 }
 
-.bg-dark-primary {
+.bg-mid-primary {
   background-color: $mid-navy;
-}
-
-.bg-darkest-primary {
-  background-color: $dark-navy;
 }
 
 // Case study
@@ -93,7 +97,7 @@ a {
 }
 
 .fixed-height {
-  height: 84vh;
+  height: 80vh;
 }
 
 .alignment {
@@ -109,5 +113,9 @@ a {
 
 // Footer
 .bg-darkestgray {
-  background-color: $darkest-gray;
+  background-color: $dark-navy;
+}
+
+.footer {
+  text-transform: capitalize;
 }
