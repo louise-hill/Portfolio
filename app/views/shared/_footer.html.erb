@@ -2,7 +2,9 @@
   <div class="container align-items-center">
     <div class="row">
       <div class="col-sm-12 col-md-6">
-        <%= image_tag("louise-hill-logo.svg", alt: "Louise Hill logo", class: "pb-3") %>
+        <%= link_to pages_home_path do %>
+          <%= image_tag("louise-hill-logo.svg", alt: "Louise Hill logo", class: "navbar-brand") %>
+        <% end %>
         <h6 class="footer pt-3 pb-3">©2021 All rights reserved</h6>
         <h6 class="footer pb-3">Website coded by Louise in Ruby on Rails</h6>
       </div>
