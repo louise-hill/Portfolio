@@ -1,37 +1,50 @@
-<section class="bg-primary min-vh-100">
+<section class="bg-primary min-vh-100" style="background-image: url(<%= asset_path('background-homepage.png') %>)">
   <%= render 'shared/navbar' %>
-    <div class="d-flex flex-column justify-content-center fixed-height">
-      <h1 class="centered row display-2 text-white">Louise Hill</h1>
-      <h6 class="centered text-center projects row">Digital Product Designer</h6>
+    <div class="container">
+      <div class="d-flex flex-column justify-content-center fixed-height">
+        <h1 class="centered row display-2 text-white">Louise Hill</h1>
+        <h6 class="centered row text-center projects">Digital Product Designer</h6>
+      </div>
+        <div class="centered row pb-5">
+          <%= image_tag("scroll-arrow.svg", alt: "Scroll arrow", class: "bouncing-arrow") %>
+        </div>
     </div>
   </section>
 
-  <section class="bg-dark-primary min-vh-100">
+  <section class="bg-mid-primary min-vh-100">
     <div class="container py-5">
-      <p class="projects centered pt-5 pb-5">Projects</p>
+      <p id="projects" class="projects centered pt-5 pb-5">Projects</p>
         <div class="row">
           <div class="col-sm-12 col-md-12 pb-5">
             <%= link_to pages_cultivate_path do %>
-              <%= image_tag("cultivate-billboard.png", alt: "Cultivate billboard", class: "featured-cultivate w-100") %>
-              <h1 class="text-white pt-4 centered">Cultivate</h1>
-              <% end %>
+              <%= image_tag("cultivate-billboard.jpg", alt: "Cultivate billboard", class: "featured-cultivate w-100") %>
+              <h1 class="text-white pt-4 centered">Cultivate<%= image_tag("link-arrow.svg", alt: "link arrow", class: "pl-3") %></h1>
               <p class="dark-text pt-1 centered px-5">How do you help people feel good about tracking their health?</p>
+              <% end %>
            </div>
               <div class="col-sm-12 col-md-6 pb-5 pt-5">
                 <%= link_to pages_inky_path do %>
                   <%= image_tag("inky-phone.png", alt: "Kid using Inky app", class: "featured w-100") %>
-                  <h1 class="text-white pt-4 centered">Inky</h1>
-                  <% end %>
+                  <h1 class="text-white pt-4 centered">Inky<%= image_tag("link-arrow.svg", alt: "link arrow", class: "pl-3") %></h1>
                   <p class="dark-text pt-1 centered px-5">How do you boost machine learning and AI, connect foreign language speakers and harness the opportunities of a ‘walkie talkie’ interaction?</p>
+      
+                  <% end %>
               </div>
                   <div class="col-sm-12 col-md-6 pb-5 pt-5">
                     <%= link_to pages_patched_path do %>
                       <%= image_tag("patched-tote-bag.png", alt: "Patched tote bag", class: "featured w-100") %>
-                      <h1 class="text-white pt-4 centered">Patched</h1>
-                      <% end %>
+                      <h1 class="text-white pt-4 centered">Patched<%= image_tag("link-arrow.svg", alt: "link arrow", class: "pl-3") %></h1>
                       <p class="dark-text pt-1 px-5 centered">If you have a team of 4, 10 days, and free reign to build anything, what do you make?</p>
+                      <% end %>
                   </div>
+                  <div class="col-sm-12 col-md-12 pb-5 pt-5">
+                  <%= link_to pages_smb_path do %>
+                    <%= image_tag("smb-tool-phone.png", alt: "Business person using the SMB tool on a phone", class: "featured-cultivate w-100") %>
+                    <h1 class="text-white pt-4 centered">SMB Tool<%= image_tag("link-arrow.svg", alt: "link arrow", class: "pl-3") %></h1>
+                    <p class="dark-text pt-1 centered px-5 kill">How do you help align a team of content creators, developers, project managers,</p>
+                    <p class="dark-text centered px-5 pb-5">designers and pitch to a world-renound client?</p>
+                    <% end %>
+                 </div>
         </div>
-      <h6 class="lowercase pt-5">©2021 All rights reserved</h6>
     </div>
   </section>
