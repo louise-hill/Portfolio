@@ -28,18 +28,23 @@ h6 {
 
 // Links
 a {
-  font-family: $monospace-font;
+  font-family: $body-font;
+  letter-spacing: 0.01rem;
+
   &:hover {
     text-decoration: none;
   }
 }
 
 .link-external {
-  color: $dark-gray;
-}
+  color: $lightest-gray;
+  opacity: 0.9;
 
-.link-external-white {
-  color: $light-gray;
+    &:hover {
+        color: $light-gray;
+        opacity: 1;
+        cursor: pointer;
+      }
 }
 
 .back-arrow {
@@ -116,6 +121,6 @@ a {
   background-color: $dark-navy;
 }
 
-.footer {
-  text-transform: capitalize;
+.footer-text {
+  color: $lighter-gray;
 }

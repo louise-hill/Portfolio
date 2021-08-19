@@ -8,4 +8,11 @@
 
 .project-pat {
     color: $darkest-purple;
+    opacity: 0.9;
+
+    &:hover {
+        color: $darkest-purple;
+        opacity: 1;
+        cursor: pointer;
+      }
 }
