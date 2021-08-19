@@ -15,10 +15,11 @@
 // Global styling 
 // Type
 h6 {
-  font-family: $monospace-font;
+  font-family: $body-font;
   text-transform: uppercase;
   color: $dark-gray;
   font-weight: 300;
+  letter-spacing: 0.05rem;
 }
 
 .kill {
@@ -53,7 +54,7 @@ a {
 
 .up-arrow {
   width: 1rem;
-  padding-bottom: 0.1em;
+  padding-bottom: 0.02em;
 }
 
 .desc-link {
@@ -79,13 +80,19 @@ a {
   color: $lightest-gray;
 }
 
+.subhead {
+  color: $gray;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+
 .bg-mid-primary {
   background-color: $mid-navy;
 }
 
 // Case study
 .dark-text {
-  color: $gray;
+  color: $lighter-gray;
 }
 
 .bg-gray {
