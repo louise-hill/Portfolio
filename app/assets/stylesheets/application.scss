@@ -15,10 +15,11 @@
 // Global styling 
 // Type
 h6 {
-  font-family: $monospace-font;
+  font-family: $body-font;
   text-transform: uppercase;
   color: $dark-gray;
   font-weight: 300;
+  letter-spacing: 0.05rem;
 }
 
 .kill {
@@ -28,14 +29,32 @@ h6 {
 
 // Links
 a {
-  font-family: $monospace-font;
+  font-family: $body-font;
   &:hover {
     text-decoration: none;
   }
 }
 
 .link-external {
-  color: $dark-gray;
+  color: $lightest-gray;
+  opacity: 0.9;
+  text-transform: none;
+
+    &:hover {
+        color: $light-gray;
+        opacity: 1;
+        cursor: pointer;
+      }
+}
+
+.link-ext-light {
+  color: #0B5CD7;
+
+  &:hover {
+      color: #044DBA;
+      opacity: 1;
+      cursor: pointer;
+    }
 }
 
 .link-external-white {
@@ -48,7 +67,6 @@ a {
 
 .up-arrow {
   width: 1rem;
-  padding-bottom: 0.1em;
 }
 
 .desc-link {
@@ -80,7 +98,7 @@ a {
 
 // Case study
 .dark-text {
-  color: $gray;
+  color: $lighter-gray;
 }
 
 .bg-gray {
@@ -117,5 +135,6 @@ a {
 }
 
 .footer {
-  text-transform: capitalize;
+  text-transform: none;
+  color: $lighter-gray;
 }
