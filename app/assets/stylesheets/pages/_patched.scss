@@ -1,18 +1,3 @@
 .bg-dark-pink {
     background-color: $dark-pink;
 }
-
-.bg-light-pink {
-    background-color: $light-pink;
-}
-
-.project-pat {
-    color: $darkest-purple;
-    opacity: 0.9;
-
-    &:hover {
-        color: $darkest-purple;
-        opacity: 1;
-        cursor: pointer;
-      }
-}

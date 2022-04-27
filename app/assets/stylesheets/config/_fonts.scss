@@ -1,17 +1,27 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("//hello.myfonts.net/count/482c15");
 
 // Define fonts for body and headers
-$body-font: "DM Sans", "Helvetica", "sans-serif";
-$headers-font: "DM Serif Display", "Helvetica", "serif";
+$body-font: "Inter", "Helvetica", "sans-serif";
+$headers-font: "ClearfaceStd-Regular", "Helvetica", "serif";
 $monospace-font: "DM Mono", "Helvetica", "monospace";
 
 // To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+ // @font-face {
+   // font-family: "ClearfaceStdRegular";
+   // src: font-url('FontFile.eot');
+   // src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+        // font-url('./fonts/ClearfaceStdRegular/font.woff') format('woff'),
+        // font-url('FontFile.ttf') format('truetype');
+ // }
+ // $my-font: "Clearface";
+
+  
+@font-face {
+  font-family: "ClearfaceStd-Regular";
+  src: url('webFonts/ClearfaceStdRegular/font.woff2') format('woff2'), url('webFonts/ClearfaceStdRegular/font.woff') format('woff');
+}
+
+$my-font: "ClearfaceStd-Regular";

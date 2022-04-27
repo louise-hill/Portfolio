@@ -6,8 +6,8 @@
           <%= image_tag("case-patched.png", alt: "patched phone mockup", class: "profile-image pt-3") %>
         </div>
           <div class="col-sm-12 col-md-6">
-            <h6 class="brand">Patched</h6>
-            <h1 class="text-white">Get gardening, organically</h1>
+            <p class="light-gray-text">Patched</p>
+            <h2 class="sub text-white">Get gardening,<br>organically</h2>
           </div>
       </div>
     </div>
@@ -29,36 +29,34 @@
 <section class="min-vh-50 bg-gray alignment">
   <div class="align-items-center pb-5 pt-5">
     <div class="container">
-      <h6 class="pt-3">The challenge</h6>
-      <h1 class="pb-5">Design and code a Ruby on Rails web app for mobile as a team of four.</h1>
+      <p class="text-gray">The challenge</p>
+      <h2 class="sub pb-5">Design and code a Ruby on Rails web app for mobile as a team of four.</h1>
     </div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-4 pb-3">
-            <h6>Background</h6>
+            <p class="text-gray">Background</p>
             <p>The brief was to create a Ruby on Rails web app from scratch. I pitched the idea for an eco gardening app and my teammates voted to work on it with me.</p>
             <p>We had a day of class-time to hash out the product design, plus evenings and weekends to refine the details, then we coded the app in 8 days.</p>
           </div>
             <div class="col-sm-12 col-md-4 pb-3">
-              <h6>The outcome</h6>
+              <p class="text-gray">The outcome</p>
               <p>A functioning web app for mobile which provides a simple step-by-step guide for setup, planting, care and harvesting.</p>
               <p>The app shows you which vegetables to plant and harvest and when, depending on the user’s garden specifications.</p>
             </div>
               <div class="col-sm-12 col-md-4 pb-3">
-                <h6>Team</h6>
+                <p class="text-gray">Team</p>
                 <p class="pb-3">Patrícia Amaral Nunes, Luís Vaz Pinto, Mariana Saavedra, Louise Hill</p>
-                <h6>Role</h6>
+                <p class="text-gray">Role</p>
                 <p class="kill">Concept, UX Design, UI Design</p>
                 <p class="pb-3">Front-end and back-end Development</p>
-                <h6>Project type</h6>
-                <p class="pb-3">Student, @ <u><%= link_to "Le Wagon, Lisbon", "https://www.lewagon.com/lisbon", target: :_blank, class: "desc-link" %></u></p>
+                <p class="text-gray">Project type</p>
+                <p class="pb-3">Delivery</p>
               </div>
         </div>
-          <%= link_to "https://louisehilltech.medium.com/le-wagon-final-project-patched-app-a77fa4647e52", target: :_blank do %>
-            <span class="project-pat">Article about creating Patched and the final demo
-            <%= image_tag("arrow-up-right-purple.svg", alt: "Link arrow", class: "up-arrow") %>
-            </span>
-            <% end %>
+          <%= link_to "https://louisehilltech.medium.com/le-wagon-final-project-patched-app-a77fa4647e52", target: :_blank, class: "override-link" do %>
+          <p class="a">Behind-the-scenes article and final demo <i class="fas fa-external-link-alt"></i></p>
+          <% end %>
       </div>
   </div>
 </section>
@@ -71,9 +69,9 @@
   <div class="container py-5">
     <div class="row py-5">
       <div class="col-sm-12 col-md-6">
-        <h1 class="pb-3">“Most of the gardening blogs and websites did not provide the right information, or communicated it in very complicated terms”</h1>
-        <p class="pb-3"><u>
-          <%= link_to "plantedwell.com", "https://www.plantedwell.com/gardening-websites-blogs", target: :_blank, class: "desc-link"  %></u>
+        <h2 class="sub pb-3">“Most of the gardening blogs and websites did not provide the right information, or communicated it in very complicated terms”</h1>
+        <p class="pb-3">
+          <%= link_to "plantedwell.com", "https://www.plantedwell.com/gardening-websites-blogs", target: :_blank, class: ""  %>
       </div>
         <div class="col-sm-12 col-md-6">
           <p>I had an afternoon to come up with an app idea so I interviewed a friend. He is an organic gardening enthusiast and opened my eyes to the difficulties of keeping away pests without using harmful chemicals.</p>
@@ -83,7 +81,7 @@
   </div>
 </section>
 
-<section class="min-vh-50 bg-light-pink">
+<section class="min-vh-50 bg-gray">
   <div class="container py-5">
     <div class="row align-items-center py-3 mx-5">
       <%= image_tag("vegetable-selection.png", alt: "Vegetable selection screen", class: "col-12 col-md-6 col-lg-4 py-3") %>
@@ -93,28 +91,48 @@
   </div>
 </section>
 
-<section class="min-vh-50 bg-light-pink alignment">
+<section class="min-vh-50 bg-white alignment">
   <div class="container py-5">
     <div class="row py-5">
       <div class="col-sm-12 col-md-6 pb-3">
-        <h1 class="pb-1">“Almost 3 million new gardening projects in the last year, nearly half of new gardeners under 45”</h1>
-        <p class="quote">
-        <u><%= link_to "hortweek.com", "https://www.hortweek.com/new-gardener-estimates-treble-month/retail/article/1693981", target: :_blank, class: "desc-link" %>
-        </u>
+        <h2 class="sub">“Almost 3 million new gardening projects in the last year, nearly half of new gardeners under 45”</h2>
+        <p class="pt-3 a">
+          <%= link_to "hortweek", "https://www.hortweek.com/new-gardener-estimates-treble-month/retail/article/1693981", target: :_blank %>
+        </p>
       </div>
-        <div class="col-sm-12 col-md-6 pb-3">
-          <p>Research showed a huge boost in gardening during the Corona pandemic, especially amongst under 45s. The <u>
-          <%= link_to "HTA Garden Retail Monitor", "https://hta.org.uk/", target: :_blank, class: "desc-link" %>
-          </u> found that sales of gardening products were up 34%, 17% and 19% in June, July and August respectively in UK garden centres in 2020, compared to 2019. On average, individual customers were spending 35% more on gardening products. In fact, the <u>
-          <%= link_to "Royal Horticultural Society", "https://www.ft.com/content/c3abc0bb-7ade-4ae1-8d2b-d3fa6be53416", target: :_blank, class: "desc-link" %>
-          </u> believes gardening is entering a new “golden age”.</p>
-          <p>And what about eco-gardening? <u>
-          <%= link_to "67% of UK gardeners", "https://www.hortweek.com/covid-19-transformed-gardening-industry-%E2%80%93-so-new-trends/retail/article/1701037", target: :_blank, class: "desc-link" %></u> say they’re eco-conscious and 46% of this group already use organic fertilisers. 
-          <u><%= link_to "The 2021 Organic Market Report", "https://www.soilassociation.org/certification/market-research-and-data/the-organic-market-report-2021/", target: :_blank, class: "desc-link" %></u> revealed the highest year-on-year growth in 15 years for the organic market, at +12.6%, with the market now worth £2.79B.</p>
+      <div class="col-sm-12 col-md-6">
+          <p>Research showed a huge boost in gardening during the Corona pandemic, especially amongst under 45s. The <%= link_to "HTA Garden Retail Monitor", "https://hta.org.uk/", target: :_blank %> found that sales of gardening products were up 34%, 17% and 19% in June, July and August respectively in UK garden centres in 2020, compared to 2019. On average, individual customers were spending 35% more on gardening products.</p>
+          <p>The eco plusses of gardening are also considerable—from supporting beneficial insects and birds, to reducing the carbon footprint of home-grown food, to increasing oxygen in the air.</p>
+          <p>And what about eco-gardening?</p>
+          <%= link_to "67% of UK gardeners", "https://www.hortweek.com/covid-19-transformed-gardening-industry-%E2%80%93-so-new-trends/retail/article/1701037", target: :_blank, class: "" %> say they’re eco-conscious and 46% of this group already use organic fertilisers. 
+          <%= link_to "The 2021 Organic Market Report", "https://www.soilassociation.org/certification/market-research-and-data/the-organic-market-report-2021/", target: :_blank, class: "" %> revealed the highest year-on-year growth in 15 years for the organic market, at +12.6%, with the market now worth £2.79B.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="min-vh-50 bg-white alignment">
+  <div class="container py-5">
+    <div class="row py-5">
+      <div class="col-sm-12 col-md-6 pb-3">
+        <h2 class="sub">“Almost 3 million new gardening projects in the last year, nearly half of new gardeners under 45”</h2>
+        <p class="quote pt-3">Dr Alan Kellas, Royal College of Psychiatrists, 
+          <%= link_to "theguardian.com", "https://www.theguardian.com/world/2020/may/17/how-lockdown-has-created-veg-growing-revolution-uk-coronavirus", target: :_blank %>
+        </p>
+      </div>
+        <div class="col-sm-12 col-md-6">
+          <p>The mental health benefits of gardening have been widely documented. A huge study by the <%= link_to "University of Exeter", "https://www.exeter.ac.uk/news/research/title_793983_en.html", target: :_blank %> on gardens and gardening showed that people who spent time in the garden report better physical and mental health levels than those who do not.</p>
+          <p>The eco plusses of gardening are also considerable—from supporting beneficial insects and birds, to reducing the carbon footprint of home-grown food, to increasing oxygen in the air.</p>
+          <p>As a team we decided on what was feasible to build in the timeframe and focused on growing vegetables so there would be a delicious reward at the end of each growing cycle.</p>
         </div>
     </div>
   </div>
 </section>
+
+
+
+
+
 
 <section>
   <%= image_tag("tomatoes-planting.png", alt: "Patched tomato planting screen", class: "w-100") %>
@@ -124,17 +142,14 @@
   <div class="container py-5">
     <div class="row py-5">
       <div class="col-sm-12 col-md-6 pb-3">
-        <h1 class="">“120 minute's exposure to nature a week is a key factor in maintaining positive mental health.”</h1>
-        <p class="quote pt-3">Dr Alan Kellas, Green Care Lead, Royal College of Psychiatrists</p>
-        <p><u>
-          <%= link_to "theguardian.com", "https://www.theguardian.com/world/2020/may/17/how-lockdown-has-created-veg-growing-revolution-uk-coronavirus", target: :_blank, class: "desc-link" %>
-          </u></p>
+        <h2 class="sub">“120 minute's exposure to nature a week is a key factor in maintaining positive mental health.”</h1>
+        <p class="quote pt-3">Dr Alan Kellas, Royal College of Psychiatrists, 
+          <%= link_to "theguardian.com", "https://www.theguardian.com/world/2020/may/17/how-lockdown-has-created-veg-growing-revolution-uk-coronavirus", target: :_blank %>
+        </p>
       </div>
         <div class="col-sm-12 col-md-6">
-          <p>The mental health benefits of gardening have been widely documented. A huge study by the <u>
-          <%= link_to "University of Exeter", "https://www.exeter.ac.uk/news/research/title_793983_en.html", target: :_blank, class: "desc-link" %></u> on gardens and gardening showed that people who spent time in the garden report better physical and mental health levels than those who do not.</p>
-          <p><u>
-          <%= link_to "The eco plusses of gardening are also considerable", "https://usgreentechnology.com/environmental-benefits-gardening", target: :_blank, class: "desc-link" %></u>—from supporting beneficial insects and birds, to reducing the carbon footprint of home-grown food, to increasing oxygen in the air.</p>
+          <p>The mental health benefits of gardening have been widely documented. A huge study by the <%= link_to "University of Exeter", "https://www.exeter.ac.uk/news/research/title_793983_en.html", target: :_blank %> on gardens and gardening showed that people who spent time in the garden report better physical and mental health levels than those who do not.</p>
+          <p>The eco plusses of gardening are also considerable—from supporting beneficial insects and birds, to reducing the carbon footprint of home-grown food, to increasing oxygen in the air.</p>
           <p>As a team we decided on what was feasible to build in the timeframe and focused on growing vegetables so there would be a delicious reward at the end of each growing cycle.</p>
         </div>
     </div>
@@ -147,9 +162,9 @@
 
 <section class="bg-dark-blue alignment py-5">
   <div class="py-5">
-    <%= link_to pages_inky_path do %>
-      <h6 class="centered row brand">Next project</h6>
-      <h1 class="centered row display-4 text-white next-arrow d-inline-block">Inky<%= image_tag("link-arrow.svg", alt: "link arrow", class: "pl-3") %></h1>
+      <p class="centered row brand light-gray-text">Next project</p>
+      <%= link_to pages_inky_path do %>
+      <h2 class="centered row display-4 text-white next-arrow d-inline-block">Inky<%= image_tag("link-arrow.svg", alt: "link arrow", class: "pl-3") %></h1>
     <% end %>
   </div>
 </section>

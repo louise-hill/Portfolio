@@ -9,3 +9,18 @@
 .email {
     font-size: 1.5rem;
 }
+
+.link-headline a {
+  font-family: $headers-font;
+  text-decoration: underline;
+  color: $lighter-gray;
+
+    &:visited {
+      color: $light-gray;
+      opacity: 1;
+      cursor: pointer;
+   }  
+     &:hover {
+      color: $lightest-gray;
+  }
+}

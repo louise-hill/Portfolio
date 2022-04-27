@@ -1,39 +1,40 @@
-<section class="bg-primary min-vh-100" style="background-image: url(<%= asset_path('background-about.png') %>)">
+<section class="bg-primary min-vh-100" style="background-image: url(<%= asset_path('background-home.svg') %>)">
   <%= render 'shared/navbar' %>
     <div class="container align-items-center d-flex fixed-height">
-      <div class="row d-flex align-items-center">
-        <div class="col-sm-12 col-md-6 centered">
-          <%= image_tag("louise-hill.png", alt: "Louise Hill", class: "profile-image") %>
-        </div>
+      <div class="row align-items-center fixed-height d-flex">
+          <div class="col-sm-12 col-md-6 centered">
+            <%= image_tag("louise-hill.png", alt: "Louise Hill", class: "profile-image pt-3") %>
+          </div>
           <div class="col-sm-12 col-md-6">
-              <h1 class="text-white pt-4">Speaking the languages of tech, business and design</h1>
+              <p class="light-gray-text">Great design makes business sense</p>
+              <h1 class="text-white">I speak the languages of tech, business and design</h1>
           </div>
       </div>
     </div>
-        <div class="centered">
+        <div class="pb-5 centered">
           <%= image_tag("scroll-arrow.svg", alt: "Scroll arrow", class: "bouncing-arrow") %>
         </div>
 </section>
 
-<section class="bg-primary py-5">
+<section class="bg-mid-primary py-5">
   <div class="container min-vh-50">
   <div class="row py-5">
   <div class="col-sm-12 col-md-6">
-     <h1 class="text-white pb-3">Making things happen</h1>
+     <h2 class="sub text-white pb-3">Making things happen</h1>
   </div>
     <div class="col-sm-12 col-md-6">
-      <p class="dark-text">I'm a highly strategic product designer and junior full-stack developer. I love coming up with a vision with an awesome team, keeping everyone motivated, and making it happen!</p> 
-      <p class="dark-text">I have a background in coding, graphic design, UX design, art direction, business operations and teaching. I use this accumulated knowledge to facilitate and create digital products that balance business, customer and technology requirements and achieve effective results.</p>
-      <p class="dark-text">I live in sunny Lisbon so when I am not designing or coding I like to head to the beach, tend to my plant babies, DJ or get out into nature.</p>
+      <p class="dark-text">I'm a design strategist and product designer. I love developing a vision with an awesome team, keeping everyone motivated, and making it happen!</p> 
+      <p class="dark-text">I have a background in coding, graphic design, UX design, art direction, business operations and teaching. I use this accumulated knowledge to facilitate innovation and transformation, plus create digital products and services that balance business, customer and technology requirements and achieve effective, measurable results.</p>
+      <p class="dark-text">*A lot of my consulting work is under NDA, so I don't share it here on my website.</p>
     </div>
   </div>
 </section>
 
-<section class="bg-mid-primary alignment">
+<section class="bg-primary alignment">
   <div class="container py-5">
     <div class="row py-5">
       <div class="col-sm-12 col-md-6">
-        <h1 class="text-white pb-3">Some of the brands I've worked with</h1>
+        <h2 class="sub text-white pb-3">Some of the brands<br>I've worked with</h1>
       </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
           <p class="dark-text pb-5">Over the years I’ve worked with companies of all shapes and sizes, both on a design and a consulting basis. Here are just a few.</p>
@@ -58,12 +59,25 @@
                 </div>
               </div>
           <%= link_to "https://www.linkedin.com/in/louisehilltech", target: :_blank do %>
-          <span class="link-external">More info on Linkedin
-          <%= image_tag("arrow-up-right.svg", alt: "Link arrow", class: "up-arrow") %>
-          </span>
+          <p class="link-external-white">More info on Linkedin <i class="fas fa-external-link-alt"></i></p>
           <% end %>
           </div>
         </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-mid-primary py-5">
+  <div class="container min-vh-50">
+  <div class="row py-5">
+  <div class="col-sm-12 col-md-6">
+     <h2 class="sub text-white pb-3 link-headline"><%= link_to "Forrester", "https://www.invisionapp.com/design-better/design-maturity-model", target: :_blank %> indicated an ROI of 85% or greater for companies which employ design thinking</h1>
+  </div>
+    <div class="col-sm-12 col-md-6">
+      <p class="dark-text">Design Thinking, Lean UX, Growth Hacking—these Buzz-words are everywhere.</p>
+      <p class="dark-text">I have lots of experience applying the design methodologies you have heard about, with tangible results.</p>
+      <p class="dark-text">If you would like to learn more about how I can help, please get in touch and we can arrange a call.</p>
+      <p class="dark-text">To discover more about how design can propel your business, check out this fantastic <%= link_to "report from InVision", "https://www.invisionapp.com/design-better/design-maturity-model", target: :_blank, class: "link-external-white" %> and get ahead of your competition.</p>
     </div>
   </div>
 </section>
@@ -72,13 +86,14 @@
   <div class="container py-5">
     <div class="row py-5">
       <div class="col-sm-12 col-md-6 py-3">
-        <h1 class="text-white">Let's work together</h1>
+        <h2 class="sub text-white">Let's work together</h1>
       </div>
         <div class="col-sm-12 col-md-6 py-3">
-          <h6 class="subhead">Email</h6>
+          <p class="light-gray-text">Email</p>
           <p class="email dark-text">louisehilltech@gmail.com</p>
         </div>
     </div>
   </div>
 </section>
+
 

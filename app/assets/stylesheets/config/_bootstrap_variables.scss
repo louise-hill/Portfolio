@@ -24,5 +24,7 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
-// Link
-$navbar-dark-color:                 rgba(255, 255, 255, .64);
+$navbar-dark-color:                 $lighter-gray;
+$navbar-dark-hover-color:           $lightest-gray;
+$link-color:                       #044DBA;
+$link-hover-color:                 #04347a;
