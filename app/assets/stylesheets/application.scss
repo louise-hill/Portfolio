@@ -1,0 +1,161 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+// Global styling 
+// Type
+
+.inter {
+  font-family: 'Inter', sans-serif;
+  font-size: 4rem;
+}
+
+.inter-small {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+}
+
+.light-gray-text {
+  color: $lightest-gray;
+}
+
+h6 {
+  font-family: $body-font;
+  color: $dark-gray;
+}
+
+.kill {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+// Links
+a {
+  color: #044DBA;
+  text-decoration: underline;
+
+    &:visited {
+      color: darkblue;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+    &:hover {
+      color: #04347a; 
+  }
+}
+
+.a {
+  color: #044DBA;
+  text-decoration: underline;
+
+    &:visited {
+      color: darkblue;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+    &:hover {
+      color: #04347a; 
+  }
+}
+
+
+.link-external-white {
+  font-family: $body-font;
+  text-decoration: underline;
+  color: $lighter-gray;
+
+    &:visited {
+      color: $light-gray;
+      opacity: 1;
+      cursor: pointer;
+   }  
+     &:hover {
+      color: $lightest-gray;
+  }
+}
+
+.link-external-title {
+  color: $lighter-gray;
+  text-decoration: none;
+
+    &:visited {
+      color: $light-gray;
+      opacity: 1;
+      cursor: pointer;
+      text-decoration: none;
+   }  
+     &:hover {
+      color: $lightest-gray;
+      text-decoration: none;
+  }
+}
+
+// Opener
+.brand {
+  color: $lightest-gray;
+}
+
+.bg-mid-primary {
+  background-color: $mid-navy;
+}
+
+// Case study
+.bg-light-gray {
+  background-color: $light-gray;
+}
+
+.dark-text {
+  color: $lighter-gray;
+}
+
+.bg-gray {
+  background-color: $lightest-gray;
+}
+
+.text-gray {
+  color: $dark-gray;
+}
+
+.bg-video {
+  background-color: #eef1f4;
+}
+
+.quote {
+  color: $dark-gray;
+  padding-top: 0.5em;
+}
+
+.fixed-height {
+  height: 80vh;
+}
+
+.alignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered {
+  justify-content: center;
+  text-align: center; 
+}
+
+// Footer
+.bg-darkestgray {
+  background-color: $dark-navy;
+}
+
+.footer {
+  text-transform: none;
+  color: $lighter-gray;
+}
