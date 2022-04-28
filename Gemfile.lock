@@ -234,7 +234,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.7)
-  sass-rails (>= 6)
+  sass-rails (~> 6.0)
   selenium-webdriver
   simple_form
   spring
