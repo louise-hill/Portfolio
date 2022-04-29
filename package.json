@@ -1,22 +1,18 @@
 {
-  "name": "Portfolio",
+  "name": "louise_portfolio_new",
   "private": true,
   "dependencies": {
+    "@popperjs/core": "^2.11.5",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
-    "bootstrap": "4.6",
-    "jquery": "^3.6.0",
-    "node-sass": "^7.0.1",
-    "popper.js": "^1.16.1",
+    "bootstrap": "^5.1.3",
+    "stimulus": "^3.0.1",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
-    "@prettier/plugin-ruby": "^1.6.1",
-    "prettier": "^2.3.2",
-    "prettier-plugin-erb": "^0.4.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^4.8.1"
   }
 }
