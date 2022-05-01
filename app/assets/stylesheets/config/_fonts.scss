@@ -21,7 +21,7 @@ $monospace-font: "DM Mono", "Helvetica", "monospace";
   
 @font-face {
   font-family: "ClearfaceStd-Regular";
-  src: url('webFonts/ClearfaceStdRegular/font.woff2') format('woff2'), url('webFonts/ClearfaceStdRegular/font.woff') format('woff');
+  src: url('assets/fonts/font.woff2') format('woff2'), url('assets/fonts/font.woff') format('woff');
 }
 
 $my-font: "ClearfaceStd-Regular";
