@@ -49,7 +49,8 @@ module.exports = function(api) {
       ],
       [
         '@babel/plugin-proposal-private-methods', 
-        { "loose": true 
+        { 
+          "loose": true 
         }
       ],
       [
