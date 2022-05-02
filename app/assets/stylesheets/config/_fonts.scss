@@ -5,7 +5,7 @@
 
 // Define fonts for body and headers
 $body-font: "Inter", "Helvetica", "sans-serif";
-$headers-font: "ClearfaceStd-Regular", "Helvetica", "serif";
+$headers-font: "ITC Clearface Std", "Helvetica", "serif";
 $monospace-font: "DM Mono", "Helvetica", "monospace";
 
 @font-face {font-family: "ITC Clearface Std"; 
@@ -13,5 +13,5 @@ $monospace-font: "DM Mono", "Helvetica", "monospace";
   src: url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.woff") format("woff"), url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.svg#ITC Clearface Std") format("svg"); 
 }
 
-$my-font: "ClearfaceStd-Regular";
+$my-font: "ITC Clearface Std";
 
