@@ -1,5 +1,5 @@
 // Import Google fonts
-@import url("//hello.myfonts.net/count/482c15");
+@import url(//db.onlinewebfonts.com/c/b0cc4fe77d43f15314c1e266b2d8272d?family=ITC+Clearface+Std);
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
@@ -8,10 +8,9 @@ $body-font: "Inter", "Helvetica", "sans-serif";
 $headers-font: "ClearfaceStd-Regular", "Helvetica", "serif";
 $monospace-font: "DM Mono", "Helvetica", "monospace";
 
-@font-face {
-  font-family: "ClearfaceStd-Regular";
-  src: url('/font.woff2') format('woff2');
-  src: url('/font.woff') format('woff');
+@font-face {font-family: "ITC Clearface Std"; 
+  src: url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.eot"); 
+  src: url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.woff") format("woff"), url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b0cc4fe77d43f15314c1e266b2d8272d.svg#ITC Clearface Std") format("svg"); 
 }
 
 $my-font: "ClearfaceStd-Regular";
