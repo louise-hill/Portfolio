@@ -10,7 +10,8 @@ $monospace-font: "DM Mono", "Helvetica", "monospace";
 
 @font-face {
   font-family: "ClearfaceStd-Regular";
-  src: url('/app/assets/fonts/ClearfaceStdRegular/font.woff2') format('woff2'), url('/app/assets/fonts/ClearfaceStdRegular/font.woff') format('woff');
+  src: font_url('/app/assets/fonts/ClearfaceStdRegular/font.woff2') format('woff2');
+  src: font_url('/app/assets/fonts/ClearfaceStdRegular/font.woff') format('woff');
 }
 
 $my-font: "ClearfaceStd-Regular";
