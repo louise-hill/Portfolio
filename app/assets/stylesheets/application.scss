@@ -13,24 +13,8 @@
 
 // Global styling 
 // Type
-
-.inter {
-  font-family: 'Inter', sans-serif;
-  font-size: 4rem;
-}
-
-.inter-small {
-  font-family: 'Inter', sans-serif;
-  font-size: 2rem;
-}
-
 .light-gray-text {
-  color: $lightest-gray;
-}
-
-h6 {
-  font-family: $body-font;
-  color: $dark-gray;
+  color: $text-gray;
 }
 
 .kill {
@@ -71,37 +55,37 @@ a {
 .link-external-white {
   font-family: $body-font;
   text-decoration: underline;
-  color: $lighter-gray;
+  color: $text-gray;
 
     &:visited {
-      color: $light-gray;
+      color: $text-gray;
       opacity: 1;
       cursor: pointer;
    }  
      &:hover {
-      color: $lightest-gray;
+      color: $text-gray;
   }
 }
 
 .link-external-title {
-  color: $lighter-gray;
+  color: $text-gray;
   text-decoration: none;
 
     &:visited {
-      color: $light-gray;
+      color: $text-gray;
       opacity: 1;
       cursor: pointer;
       text-decoration: none;
    }  
      &:hover {
-      color: $lightest-gray;
+      color: $text-gray;
       text-decoration: none;
   }
 }
 
 // Opener
 .brand {
-  color: $lightest-gray;
+  color: $text-gray;
 }
 
 .bg-mid-primary {
@@ -114,7 +98,7 @@ a {
 }
 
 .dark-text {
-  color: $lighter-gray;
+  color: $text-gray;
 }
 
 .bg-gray {
@@ -147,14 +131,4 @@ a {
 .centered {
   justify-content: center;
   text-align: center; 
-}
-
-// Footer
-.bg-darkestgray {
-  background-color: $dark-navy;
-}
-
-.footer {
-  text-transform: none;
-  color: $lighter-gray;
 }

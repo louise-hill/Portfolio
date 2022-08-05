@@ -1,20 +1,179 @@
-<section class="bg-primary min-vh-100" style="background-image: url(<%= asset_path('background-about.png') %>)">
+<section class="min-vh-100">
   <%= render 'shared/navbar' %>
-    <div class="container">
-      <div class="d-flex container flex-column justify-content-center fixed-height">
-       <h1 class="centered weight display-1 row text-white">Louise Hill</h1>
-       <h2 class="centered row light-gray-text">Product designer</h2>
-       <h2 class="centered row light-gray-text">& Strategist</h2>
-      </div>
-      <div class="pb-5 centered">
-        <%= image_tag("scroll-arrow.svg", alt: "Scroll arrow", class: "bouncing-arrow") %>
+    <div class="container align-items-center fixed-height d-flex">
+      <div class="row align-items-center fixed-height">
+          <div class="col-sm-12 col-md-6 py-5">
+              <p class="tag">Louise Hill (she/her)</p>
+              <h1 class="">Product designer and strategist</h1>
+              <p class="intro-text">Louise likes to research things, make things and change things.</p>
+              <p class="pb-3 intro-text">Currently product designer and digital consultant @ BJSS. Previously strategic designer @ Luxid.</p>
+              <button type="button" class="btn btn-primary">Contact Louise</button>
+          </div>
+          <div class="col-sm-12 col-md-6 centered">
+            <svg width="457" height="362" viewBox="0 0 457 362" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="header-image">
+                  <circle id="background-circle-static" cx="234.5" cy="203.5" r="147.5" fill="#FF380D"/>
+                  <g id="wheel">
+                      <path id="wheel_2" d="M107.357 362H126.643L121.5 269.429L153 356.857L170.357 349.786L130.5 265.571L192.857 335L206.357 320.857L137.571 259.143L221.143 299L228.857 281L140.786 250.143L234 254.643V235.357L140.786 240.5L228.857 209L221.143 191.643L137.571 231.5L206.357 169.143L192.857 155.643L130.5 224.429L170.357 140.857L153 133.143L121.5 220.571L126.643 128H107.357L111.857 221.214L81 133.143L63 140.857L102.857 224.429L41.1429 155.643L27 169.143L96.4286 231.5L12.2143 191.643L5.14286 209L92.5714 240.5L0 235.357V254.643L92.5714 250.143L5.14286 281L12.2143 299L96.4286 259.143L27 320.857L41.1429 335L102.857 265.571L63 349.786L81 356.857L111.857 269.429L107.357 362Z" fill="black"/>
+                  </g>
+                  <g id="star">
+                      <path id="star_2" d="M364.761 337L377.187 289.808L411.119 324.606L398.216 277.891L445.052 290.762L410.164 256.917L457 245L410.164 232.606L445.052 198.762L398.216 211.632L411.119 165.394L377.187 199.715L364.761 153L352.813 199.715L318.881 165.394L331.784 211.632L284.948 198.762L319.836 232.606L273 245L319.836 256.917L284.948 290.762L331.784 277.891L318.881 324.606L352.813 289.808L364.761 337Z" fill="black"/>
+                  </g>
+                  <g id="flower">
+                      <path id="flower_2" d="M284.677 121.397C290.213 120.713 293.836 114.938 292.913 107.464C292.461 103.807 290.311 98.0994 286.6 90.1629C282.89 82.2263 280.524 74.7696 279.679 67.932L279.424 65.8649C286.934 69.4576 292.13 72.5288 294.659 74.7994C299.894 79.4803 313.762 92.9426 323.094 91.7899C328.63 91.1061 331.935 86.6619 331.346 81.8915C331.012 79.1883 329.61 76.9398 327.101 74.8282C322.103 70.7639 312.021 69.749 300.16 68.631C294.151 68.0818 287.687 66.4586 280.414 63.4824C286.903 58.8064 292.915 55.4808 298.769 53.4662C304.464 51.4712 309.527 49.5544 313.779 47.5762C322.579 43.4218 325.964 38.322 325.296 32.9156C324.688 27.9862 320.459 24.9568 315.398 25.582C312.234 25.9728 309.347 27.2981 306.597 29.7365C303.985 31.9963 299.394 37.7294 292.981 46.9163C286.154 55.3473 287.183 54.5744 278.874 61.4125C277.931 53.7799 278.353 45.4944 280.159 36.7151C281.965 27.9358 282.623 21.5584 282.152 17.7421C281.209 10.1095 276.31 5.54864 270.774 6.23245C265.079 6.9358 261.635 12.8502 262.538 20.1648C263.226 25.7302 268.653 37.1677 272.126 44.4877C273.863 48.1477 274.986 53.3365 275.772 59.697L276.027 61.7642C269.229 58.7294 263.834 55.3597 259.863 51.8142C251.922 44.7233 240.74 34.8037 232.357 35.8392C226.821 36.523 223.476 40.6492 224.066 45.4196C224.4 48.1228 225.821 50.5302 228.172 52.6614C232.874 56.9238 242.619 57.8187 254.797 58.8976C260.964 59.4273 267.764 61.1705 275.036 64.1467C268.865 68.7835 262.852 72.1092 257.295 73.9257C251.58 75.7616 246.537 77.8375 242.107 79.6762C233.09 83.3731 229.467 89.148 230.115 94.3954C230.704 99.1658 235.308 102.633 240.369 102.008C248.594 100.992 255.265 91.289 262.073 81.4074C265.478 76.4666 270.148 71.3695 276.577 66.2165C277.598 74.4852 277.157 82.6117 275.331 91.232C273.486 99.6933 272.808 105.912 273.299 109.887C274.183 117.042 278.825 122.12 284.677 121.397Z" fill="black"/>
+                  </g>
+              </g>
+          </svg>
+          </div>
       </div>
     </div>
-  </section>
+        <div class="pb-5 centered">
+          <%= image_tag("scroll-arrow.svg", alt: "Scroll arrow", class: "bouncing-arrow") %>
+        </div>
+</section>
 
-  <section class="bg-mid-primary min-vh-100">
+  <section class="bg-gray min-vh-100">
+    <div class="container min-vh-50">
+      <div class="row py-5">
+          <div class="col-sm-12 col-md-6">
+            <h2 class="pb-2">Forrester claims a ROI of 85% or greater for companies which employ design thinking</h2>
+            <p class="pb-5">Louise has a wealth of experience across advertising, branding, coding, strategic design, UX design, user research, facilitation and product design. She has also worked in business operations management. This gives Louise a big-picture view of design in your organisation, plus solutions for how it can be best tied to your business goals and harmonise with engineering.</p>
+          </div>
+</section>
+
+<section class="min-vh-100">
+<div class="container min-vh-50">
+  <div class="row py-5">
+      <div class="col-sm-12 col-md-6">
+        <h2 class="pb-2">Services</h2>
+        <p class="pb-5">Product design, workshops, strategy, improving accessibility, UX research, design mentoring, training, new product development</p>
+        <h4 class="">Case studies</h2>
+    </div>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body cbackground">
+                <p class="card-text tag">Transformation</p>
+                <h4 class="card-title pb-3">Helping an Energy Client embrace Lean processes</h4>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">arrow</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <p class="card-text tag">Brand strategy</p>
+                <h4 class="card-title pb-3">Design for rapid scaling</h4>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">arrow</small>
+              </div>
+            </div>
+          </div><div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text tag">Product design</p>
+              <h4 class="card-title pb-3">Designing for AI</h4>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">arrow</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+    </div>
+</div>
+  <p>More case studies</p>
+</section>
+
+<section class="bg-gray min-vh-100">
+<div class="container min-vh-50">
+  <div class="row py-5">
+      <div class="col-sm-12 col-md-12">
+      <h2 class="pb-5">Past clients</h2>
+            <div class="d-flex justify-content-between px-3 pb-5 flex-wrap">
+                <div>
+                  <%= image_tag "happy-not-perfect.svg", alt: "Happy Not Perfect Logo", class: "py-3 px-3" %>
+                </div>
+                <div>
+                  <%= image_tag "rococo-chocolates.svg", alt: "Rococo Chocolates Logo", class: "py-3 px-3" %>
+                </div>
+                <div>
+                  <%= image_tag "ice.svg", alt: "Institution of Civil Engineers Logo", class: "py-3 px-3" %>
+                </div>
+                <div>
+                  <%= image_tag "detox-kitchen.svg", alt: "Detox Kitchen Logo", class: "py-3 px-3" %>
+                </div>
+                <div>
+                  <%= image_tag "natural-history-museum.svg", alt: "Natural History Museum Logo", class: "py-3 px-3" %>
+                </div>
+                <div>
+                   <%= image_tag "pernod-ricard.svg", alt: "Pernod Ricard Logo", class: "py-3 px-3" %>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+          <h2 class="pb-5">Testamonials</h2>
+        </div>
+    </div>
+    </section>
+  
+<section class="min-vh-100">
+  <div class="container min-vh-50">
+    <div class="row py-5">
+        <div class="col-sm-12 col-md-12">
+        <h2 class="pb-5">Demystifying design</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card h-100">
+              <%= image_tag "design-thinking.svg", alt: "graphic shape", class: "" %>
+              <div class="card-body">
+                <h5 class="card-title py-3">What is Design Thinking?</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">arrow</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card h-100">
+              <%= image_tag "lean.svg", alt: "graphic shape", class: "" %>
+              <div class="card-body">
+                <h5 class="card-title py-3">What is Lean?</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">arrow</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card h-100">
+              <%= image_tag "agile.svg", alt: "graphic shape", class: "" %>
+              <div class="card-body">
+                <h5 class="card-title py-3">What is Agile?</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">arrow</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+</section>
+
+
+
+
+<section class="min-vh-100">
     <div class="container py-5">
-        <h2 id="projects" class="centered pt-5 pb-5 text-white">Work</h2>
         <div class="row no-underline">
           <div class="col-sm-12 col-md-12 pb-5">
             <%= link_to pages_cultivate_path, class: "link-external-title" do %>

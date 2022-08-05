@@ -13,7 +13,7 @@
 .link-headline a {
   font-family: $headers-font;
   text-decoration: underline;
-  color: $lighter-gray;
+  color: $text-gray;
 
     &:visited {
       color: $light-gray;
@@ -21,6 +21,6 @@
       cursor: pointer;
    }  
      &:hover {
-      color: $lightest-gray;
+      color: $text-gray;
   }
 }

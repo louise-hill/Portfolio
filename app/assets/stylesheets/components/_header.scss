@@ -1,0 +1,36 @@
+#wheel {
+    &:hover {
+        -webkit-animation:wheelspin 4s linear infinite;
+        -moz-animation:wheelspin 4s linear infinite;
+        animation:wheelspin 4s linear infinite;
+        transform-origin:center;
+    }
+    @-moz-keyframes wheelspin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes wheelspin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes wheelspin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
+
+
+#star {
+    &:hover {
+        -webkit-animation:starspin 4s linear infinite;
+        -moz-animation:starspin 4s linear infinite;
+        animation:starspin 4s linear infinite;
+        transform-origin:center;
+    }
+    @-moz-keyframes starspin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes starspin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes starspin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
+
+#flower {
+    &:hover {
+        -webkit-animation:flowerspin 4s linear infinite;
+        -moz-animation:flowerspin 4s linear infinite;
+        animation:flowerspin 4s linear infinite;
+        transform-origin:center;
+    }
+    @-moz-keyframes flowerspin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes flowerspin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes flowerspin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}

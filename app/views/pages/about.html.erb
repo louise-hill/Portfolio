@@ -1,7 +1,30 @@
+<section class="min-vh-100">
+  <%= render 'shared/navbar' %>
+    <div class="container align-items-center fixed-height">
+      <div class="row align-items-center fixed-height d-flex">
+          <div class="col-sm-12 col-md-6 py-5">
+              <h1 class="">About Louise</h1>
+              <p class="">A unique design journey from Literature student, to business operations manager, to graphic designer, UX designer, strategic designer, product designer and consultant.</p>
+              <button type="button" class="btn btn-primary">Contact Louise</button>
+          </div>
+          <div class="col-sm-12 col-md-6 centered">
+            <%= image_tag("about.svg", alt: "Research, make, change graphic", class: "justify-content-end") %>
+          </div
+        </div>
+      </div>
+    </div>
+        <div class="pb-5 centered">
+          <%= image_tag("scroll-arrow.svg", alt: "Scroll arrow", class: "bouncing-arrow") %>
+        </div>
+</section>
+
+
+
+
 <section class="bg-primary min-vh-100" style="background-image: url(<%= asset_path('background-about.png') %>)">
   <%= render 'shared/navbar' %>
     <div class="container align-items-center d-flex fixed-height">
-      <div class="row align-items-center fixed-height d-flex">
+      <div class="row align-items-center fixed-height">
           <div class="col-sm-12 col-md-6 centered">
             <%= image_tag("louise-hill.png", alt: "Louise Hill", class: "profile-image pt-3") %>
           </div>
